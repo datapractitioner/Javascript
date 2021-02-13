@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Basic Concepts on Javascript </h2>
+        <p id = 'testo_da_cambiare'> Testo che viene cambiato con il click del button </p>
+
+        <button type = 'button' onclick=changeText()> Clicca per cambiare il testo del paragrafo </button>
+
+        <script>
+            function changeText(){
+                document.getElementById('testo_da_cambiare').innerHTML = 'Nuovo Testo'
+            }
+        </script>
+    </body>
+</html>
