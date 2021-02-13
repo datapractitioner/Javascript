@@ -8,8 +8,20 @@
 
         <script>
             function changeText(){
-                document.getElementById('testo_da_cambiare').innerHTML = 'Nuovo Testo'
+                document.getElementById('testo_da_cambiare').innerHTML = 'Nuovo Testo';
             }
         </script>
+
+        <h2> Posso importare funzioni Javascript anche da file esterni </h2>
+        <p id = 'cambia_colore'> Clicca per cambiare colore </p>
+        <button type = 'button' onclick = changeColor()>click me to change color</button>
+
+
+        <!-- E' possibile importare script Javascript anche da file esterni  -->
+        <script src = 'script_esterno.js'></script>
+
+
+
+
     </body>
 </html>
