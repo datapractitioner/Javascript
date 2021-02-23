@@ -33,6 +33,22 @@
             //Javascript has also Arrays and Objects which are very useful structures
             //this is an Array
             var array = ['Car','Radio','Volvo']; // similar to a Python list
+            var cars = new Array('Saab','Volvo','VolksWagen'); // arrays can be initialized also in this way
+
+            // access array elements
+            console.log('New cars array created : ' + cars);
+            console.log('Accessing the first element of the above array : ' + cars[0]);
+            console.log('Lenght of an array : ' + cars.length); //access the length property
+
+            // looping array objects using foreach;
+            cars.forEach(print_car);
+            function print_car(value){
+                return console.log('The car is a : ' + value);
+            }
+
+            // In order to add an element to the array use the push method
+            cars.push('Ferrari');
+            console.log('New car added to the array ! : ' + cars)
             
             var oggetto = {
                            firstName : 'John',
