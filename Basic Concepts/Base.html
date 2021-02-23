@@ -25,6 +25,7 @@
         <button type = 'button' onclick = AlertBox()>click to alert</button>
 
         <h2>Javascript Data Types</h2>
+        <h2>Check the Console Log to see the output </h2>
         <script>
             var x = 5;
             var y = 'Hello World';
@@ -32,7 +33,18 @@
             //Javascript has also Arrays and Objects which are very useful structures
             //this is an Array
             var array = ['Car','Radio','Volvo']; // similar to a Python list
-            var oggetto = {firstName : 'John', lastName : 'Carpenter'} //similar to a Python dictionary, key-value pairs
+            
+            var oggetto = {
+                           firstName : 'John',
+                           lastName : 'Carpenter',
+                           fullName : function() { // also functions can be inserted in the Object
+                               return 'The full name of this Person is : ' + this.firstname + ' ' + this.lastName
+                           }
+                          } //similar to a Python dictionary, key-value pairs
+            // the Object property can be accessed in two ways
+            console.log('Primo modo ' + oggetto.firstName); //primo modo
+            console.log('Secondo modo ' + oggetto['firstName'])
+
 
             // In order to find the data type of a variable we can use the typeof Operator
             var tipo;
